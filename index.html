@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Resource Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Grid Resource Scheduler</h1>
+    <div class="container">
+        <div>
+            <h2>Register Resource</h2>
+            <input type="text" id="resourceName" placeholder="Resource Name">
+            <input type="number" id="cpu" placeholder="CPU Cores">
+            <input type="number" id="ram" placeholder="RAM (GB)">
+            <button onclick="addResource()">Add Resource</button>
+        </div>
+
+        <div>
+            <h2>Submit Task</h2>
+            <input type="text" id="taskName" placeholder="Task Name">
+            <input type="number" id="taskCpu" placeholder="Required CPU Cores">
+            <input type="number" id="taskRam" placeholder="Required RAM (GB)">
+            <button onclick="submitTask()">Submit Task</button>
+        </div>
+
+        <div>
+            <h2>Choose Scheduling Algorithm</h2>
+            <select id="schedulingAlgorithm">
+                <option value="FCFS">First-Come, First-Serve</option>
+                <option value="RR">Round-Robin</option>
+            </select>
+        </div>
+
+        <div id="resources">
+            <h2>Available Resources</h2>
+            <ul id="resourceList"></ul>
+        </div>
+
+        <div id="tasks">
+            <h2>Pending Tasks</h2>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div id="execution">
+            <h2>Task Execution</h2>
+            <ul id="executionLog"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
