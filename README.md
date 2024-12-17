@@ -2,7 +2,7 @@
 Project Overview: Grid Resource Scheduler
 
 website link:
-https://lnkd.in/gUvh3etm
+https://shiny-pavlova-11aa51.netlify.app/
 
 Introduction
 
